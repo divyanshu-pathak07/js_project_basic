@@ -1,0 +1,175 @@
+body{
+    background-image: url('love-backgr.png');
+      font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+h2{
+    text-align: center;
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
+.parent{
+  border: 1px solid saddlebrown;
+  border-radius: 20px;
+   background: rgb(0, 0, 0,0.6);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 30px;
+    
+}
+input{
+    color: #fff;
+    background: transparent;
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 1px solid #ca611173 ;
+    outline: none;
+}
+label{
+    margin-top: 20px;
+}
+
+button {
+margin-top: 50px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(239, 165, 28);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgba(84, 43, 2, 0.71);
+  box-shadow: 0 0 30px 5px rgba(108, 42, 6, 0.653);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  transform: scale(1.05);
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+@media(max-width:480px){
+  body{
+    background: black;
+  }
+  .parent{
+    margin: 18px auto;
+    padding: 18px;
+    
+  }
+  input{
+    margin-top: 15px;
+    width: 150px;
+    height: 16px;
+    padding: 5px;
+    
+    font-size: 16px;
+  }
+  label{
+    margin-top: 20px;
+ }
+
+button{
+  margin-top: 30px;
+  font-size: 12px;
+  padding: 6px 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+}
+@media(max-width:768px){
+   body{
+    background: black;
+  }
+  .parent{
+     margin: 24px auto;
+    padding: 12px;
+    
+  }
+  input{
+     margin-top: 10px;
+    width: 180px;
+    height: 20px;
+    padding: 6px;
+    
+    font-size: 14px;
+  }
+  label{
+    margin-top: 12px;
+ }
+
+button{
+  margin-top: 32px;
+  font-size: 14px;
+  padding: 8px 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+}
